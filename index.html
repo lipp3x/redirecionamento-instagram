@@ -2,8 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3;url=instagram://user?username=eov1niii">
-    <title>Redirecionando para Instagram...</title>
+    <meta http-equiv="refresh" content="3;url=https://www.instagram.com/eov1niii/">
+    <script type="text/javascript">
+        setTimeout(function() {
+            var isInstagramApp = /instagram/i.test(navigator.userAgent);
+            if (isInstagramApp) {
+                window.location.href = "instagram://user?username=eov1niii";
+            } else {
+                window.location.href = "https://www.instagram.com/eov1niii/";
+            }
+        }, 3000); // O redirecionamento acontece após 3 segundos
+    </script>
+    <title>Redirecionando...</title>
 </head>
 <body>
     <p>Você está sendo redirecionado para o Instagram...</p>
